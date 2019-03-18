@@ -15,12 +15,13 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
-        loadMethod();
+
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         title=findViewById(R.id.title);
         discription=findViewById(R.id.discription);
-
+        sharedPreferences=getSharedPreferences("spName",MODE_PRIVATE);
+        loadMethod();
 
 
         button1=findViewById(R.id.button1);
@@ -67,7 +68,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     }
 
     public void loadMethod(){
-        sharedPreferences=getSharedPreferences("spName",MODE_PRIVATE);
+
         if (sharedPreferences.contains("title") && sharedPreferences.contains("dis")) {
             String data1 = sharedPreferences.getString("title", null);
             String data2 = sharedPreferences.getString("dis", null);
@@ -75,5 +76,6 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             discription.setText(data2);
 
         }
+
     }
 }

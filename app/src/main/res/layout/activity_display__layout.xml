@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#20CECE"
+    tools:context=".Display_Layout">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Title"
+        android:textColor="#F8F4F4"
+        android:layout_marginTop="20sp"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20sp"
+        android:textSize="30sp"
+        />
+    <EditText
+        android:id="@+id/title"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20sp"
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="80dp" />
+    <TextView
+        android:textColor="#F8F4F4"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20sp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Description"
+        android:textSize="30sp"
+        />
+    <EditText
+        android:gravity="start"
+        android:id="@+id/discription"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20sp"
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="450dp" />
+    <Button
+        android:id="@+id/save"
+        android:textColor="#F8F4F4"
+        android:background="#3595C0"
+        android:layout_marginRight="20dp"
+        android:layout_gravity="right|top"
+        android:text="Save"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+</LinearLayout>
